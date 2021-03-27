@@ -8,21 +8,25 @@ class User{
 
     async login() {
         const client = this.body;
-        const {id, password} = await UserStorage.getUserInfo(client.id);
-        if (id){
-            if (id === client.id && password === client.password ){
-            return { success: true};
+        try{
+            const {id, password} = await UserStorage.getUserInfo(client.id);
+            if (id){
+                if (id === client.id && password === client.password ){
+                return { success: true};
+                }
+                return { success: false, msg: "wrong password."};
             }
-            return { success: false, msg: "wrong password."};
+            return { success: false, msg: "There is no ID."};
+        } catch (err) {
+        return {success: false, msg: err};
         }
-        return { success: false, msg: "There is no ID."};
     }
 
     async register() {
         const client = this.body;
         try{
         const response = await UserStorage.save(client);
-;        return response;
+        return response;
         } catch (err) {
             return { success: false, msg: err};
         }
