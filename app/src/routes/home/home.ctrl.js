@@ -9,13 +9,24 @@ const  output = {
     login: (req, res) =>{
         res.render("home/login");
     },
-    register: (req, res) =>{
-        res.render("home/register");
+    fordisable: (req, res) =>{
+        res.render("home/fordisable");
     },
+    selectjoin: (req, res) =>{
+        res.render("home/selectjoin");
+    },
+    setting: (req, res) =>{
+        res.render("home/setting");
+    },
+    conference: (req, res) =>{
+        res.render("home/conference");
+    }
+   
+    
 };
 
 
-
+/*
 const process = {
     login: async (req, res) => {
 
@@ -31,7 +42,7 @@ const process = {
         return res.json(response);
         
     },
-};
+};*/
 module.exports = {
     output,
     process,

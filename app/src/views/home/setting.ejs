@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<div class="container">
+
+    
+    <link rel="stylesheet" href="/css/home/setting.css">
+    <script src="/js/home/setting.js" defer></script>
+
+	<h2 class="title">회의 설정</h2>
+    <br></br>
+    <br></br>
+    <br></br>
+
+	<div class="length range__slider" data-min="0" data-max="100" >
+		<div class="length__title field-title" data-length='50'>마이크 볼륨 :</div>
+		<input id="slider" type="range" min="0" max="100" value="50" />
+	</div>
+    <div class="length range__slider" data-min="0" data-max="100" >
+		<div class="length__title field-title" data-length='50'>스피커 볼륨 :</div>
+		<input id="slider" type="range" min="0" max="100" value="50" />
+        
+	</div>
+
+	<div class="settings">
+		<span class="settings__title field-title">주변기기 설정</span>
+		<div class="setting">
+			<input type="checkbox" id="uppercase" checked />
+			<label for="uppercase">웹캠 설정&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="lowercase" checked />
+			<label for="lowercase">마이크 설정&nbsp;&nbsp;▼</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="number" checked />
+			<label for="number">스피커 설정&nbsp;&nbsp;▼</label>
+		</div>
+        <div class="setting">
+			<input type="checkbox" id="TTS" checked />
+			<label for="TTS">TTS 사용 여부</label>
+            
+		</div>
+        <div class="setting">
+			<input type="checkbox" id="STT" checked />
+			<label for="STT">STT 사용 여부</label>
+            
+		</div>
+		
+	</div>
+
+	<button class="btn generate" id="generate">회의 생성</button>
+</div>
+
+
+<div class="support">
+	<a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+	<a href="https://codepen.io/dev_loop/" target="_blank"><i class="fab fa-codepen"></i></a>
+</div>
+

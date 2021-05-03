@@ -17,44 +17,71 @@
 }
 .form input {
   font-family: "Roboto", sans-serif;
-  outline: 0;
+  outline: 10px;
   background: #f2f2f2;
   width: 100%;
   border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
+  margin: 0 0 13px;
+  padding: 12px;
   box-sizing: border-box;
   font-size: 14px;
 }
-.form #button {
+
+
+.form #buttonA{
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #50abcf;
   width: 80%;
   border: 0;
   margin: 0 auto;
   padding: 15px;
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 17px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  font-weight: bold;
 }
-.form #button:hover,.form #button:active,.form #button:focus {
-  background: #43A047;
+.form #buttonB{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #50abcf;
+  width: 80%;
+  border: 0;
+  margin: 0 auto;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 17px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  font-weight: bold;
 }
+.form #buttonA:hover,.form #buttonA:active,.form #buttonA:focus {
+  background: #4386a0;
+}
+.form #buttonB:hover,.form #buttonB:active,.form #buttonB:focus {
+  background: #4386a0;
+}
+
+
 .form .message {
   margin: 15px 0 0;
   color: #b3b3b3;
   font-size: 12px;
 }
 .form .message a {
-  color: #4CAF50;
+  color: #596cd8;
   text-decoration: none;
 }
-.form .register-form {
-  display: none;
+.form .message b {
+  color: #4a4d4b;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: end;
 }
 .container {
   position: relative;
@@ -90,13 +117,16 @@
   color: #EF3B3A;
 }
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+  background: no-repeat center center fixed;
+  background: cover;
+  background: #3c88eb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c88eb, #e9ebce);
+  background: -moz-linear-gradient(to right , #3c88eb, #e9ebce);
+  background: -o-linear-gradient(to right , #3c88eb, #e9ebce);
+  background: linear-gradient(to right , #3c88eb, #e9ebce);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+  -moz-osx-font-smoothing: grayscale;     
+
 }
 /*  Copyright (c) 2021 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) */
